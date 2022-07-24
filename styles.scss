@@ -1,0 +1,395 @@
+@font-face {
+  font-family: nevis;
+  src: url("recursos/fonts/nevis.eot");
+  src: url("recursos/fonts/nevis.eot?#iefix") format("embed-opentype"), url("recursos/fonts/nevis.woff") format("woff"), url("recursos/fonts/nevis.ttf") format("truetype"), url("recursos/fonts/nevis.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: fajalla;
+  src: url("recursos/fonts/FjallaOne-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: icons;
+  src: url("recursos/fonts/websymbols-regular-webfont.svg#WebSymbolsRegular") format("svg"), url("recursos/fonts/websymbols-regular-webfont.eot");
+  src: url("recursos/fonts/websymbols-regular-webfont.eot?#iefix") format("embed-opentype"), url("recursos/fonts/websymbols-regular-webfont.ttf") format("truetype"), url("recursos/fonts/websymbols-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body header {
+  display: grid;
+  justify-content: center;
+  height: 250px;
+}
+
+body header div {
+  display: grip;
+}
+
+body header div img {
+  width: 140px;
+  margin-left: 75px;
+  margin-top: 20px;
+}
+
+body header h1 {
+  font-family: nevis;
+  color: #5EB15E;
+  text-shadow: 0px 2px 3px black;
+  font-size: 40px;
+  letter-spacing: 4px;
+  margin-bottom: 25px;
+  transition: all 2s;
+}
+
+body header h1:hover {
+  text-shadow: 3px 5px 2px #054705;
+}
+
+body nav {
+  background-color: #3D3D3C;
+  height: 40px;
+  font-family: sans-serif;
+  line-height: 40px;
+  font-size: 15px;
+}
+
+body nav ul {
+  display: grid;
+  grid-template-columns: repeat(11, 1fr);
+  text-align: center;
+  margin-left: 300px;
+}
+
+body nav ul li {
+  list-style: none;
+  border: 1px solid grey;
+  transition: 2s;
+}
+
+body nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+body nav ul li ul {
+  display: none;
+  position: absolute;
+  width: 115px;
+  box-shadow: 2px 2px 2px #3d3d3c;
+  z-index: 1;
+  margin-left: -1px;
+}
+
+body nav ul li .equipo {
+  width: 130px;
+  margin-left: -10px;
+}
+
+body nav ul .icon1 {
+  display: none;
+  font-family: icons;
+}
+
+body nav ul .enter {
+  display: none;
+}
+
+body nav ul li:hover {
+  background-color: #5EB15E;
+}
+
+body nav ul li:hover ul {
+  display: block;
+}
+
+body nav ul li:hover ul li {
+  background-color: #3d3d3c;
+  color: white;
+  padding: 8px;
+  line-height: 25px;
+  font-size: 13px;
+  border-bottom: 2px solid grey;
+}
+
+body nav ul li:hover ul li a {
+  text-decoration: none;
+  color: white;
+  transition: 3s;
+}
+
+body nav ul li:hover ul li a:hover {
+  text-shadow: 0px 0px 1px #3a3737, 3px 3px 2px #5EB15E;
+}
+
+body nav ul .icon1 .list2{
+  font-family: sans-serif;
+  position: absolute;
+  margin-top: 40px;
+}
+
+body #cuerpo {
+  margin: 0px auto;
+  width: 78%;
+  display: grid;
+  grid-template-columns: 20% 80%;
+  padding-top: 30px;
+}
+
+body #cuerpo aside {
+  border: 2px solid #c9bfbf;
+  box-shadow: 0px 2px #c9bfbf;
+  margin-right: 30px;
+  font-family: sans-serif;
+  padding: 10px;
+  max-height: 900px;
+}
+
+body #cuerpo aside h2 {
+  text-align: center;
+  font-size: 17px;
+  color: #363434;
+}
+
+body #cuerpo aside div {
+  border-bottom: 1px dashed #c9bfbf;
+}
+
+body #cuerpo aside div form {
+  text-align: center;
+  padding-top: 20px;
+  font-size: 14px;
+}
+
+body #cuerpo aside div form input {
+  border: 1px solid lightgray;
+  box-shadow: -1px -1px 2px grey inset;
+  padding: 2px;
+  margin: 5px;
+}
+
+body #cuerpo aside div form input[type=submit] {
+  background-color: #5EB15E;
+  color: white;
+  padding: 6px 9px 6px 9px;
+  box-shadow: 0px -1px 8px darkgreen inset;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+body #cuerpo aside div form input[type=submit]:hover {
+  box-shadow: none;
+  cursor: pointer;
+}
+
+body #cuerpo aside div a {
+  display: block;
+  text-decoration: none;
+  color: #4aa34a;
+  font-size: 14px;
+  padding: 1px;
+}
+
+body #cuerpo aside div a:hover {
+  color: darkgreen;
+}
+
+body #cuerpo aside #registrate {
+  color: #0d72cf;
+  margin-top: 15px;
+}
+
+body #cuerpo aside #bus {
+  color: #940d0d;
+  margin-top: 15px;
+}
+
+body #cuerpo aside #enlaces {
+  color: darkgoldenrod;
+  padding: 15px;
+}
+
+body #cuerpo aside #a a {
+  text-decoration: dotted !important;
+  list-style: circle;
+  padding: 5px;
+  transition: all 1s;
+}
+
+body #cuerpo aside #a a:hover {
+  margin-left: 10px;
+}
+
+body #cuerpo #contenido {
+  margin-left: 25px;
+}
+
+body #cuerpo #contenido div {
+  margin-bottom: 40px;
+  padding: 20px;
+  border: 3px solid lightgrey;
+}
+
+body #cuerpo #contenido div h2 {
+  font-family: fajalla;
+  text-align: center;
+  border-bottom: 3px dashed lightgrey;
+  letter-spacing: 1px;
+  font-weight: normal;
+  color: #3d3939;
+}
+
+body #cuerpo #contenido div .i2 {
+  color: darkred;
+}
+
+body #cuerpo #contenido div .i3 {
+  color: darkgoldenrod;
+}
+
+body #cuerpo #contenido div section {
+  font-family: sans-serif;
+  font-size: 16px;
+  padding: 5px;
+  margin-bottom: 15px;
+}
+
+body #cuerpo #contenido div section .icon {
+  font-family: icons;
+  color: #848383;
+}
+
+body #cuerpo #contenido div section a {
+  color: #4aa34a;
+  text-decoration: none;
+}
+
+body #cuerpo #contenido div section a:hover {
+  color: darkgreen;
+}
+
+body #cuerpo #contenido div section p {
+  color: #2c2b2b;
+  padding-top: 17px;
+}
+
+body #cuerpo #contenido div section .date {
+  display: block;
+  color: gray;
+  font-size: 14px;
+}
+
+body #cuerpo #contenido #end {
+  border: none;
+  margin: 0px;
+  padding: 0px;
+  text-align: right;
+  margin-top: -20px;
+  margin-right: 0px;
+}
+
+body #cuerpo #contenido #end a {
+  font-family: sans-serif;
+  color: #4aa34a;
+  text-decoration: none;
+}
+
+body #cuerpo #contenido #end a:hover {
+  color: darkgreen;
+}
+
+body footer {
+  text-align: center;
+  background-color: #3D3D3C;
+  height: 35px;
+  line-height: 35px;
+}
+
+body footer p {
+  font-size: 14px;
+  color: white;
+  font-family: sans-serif;
+}
+
+body footer p a {
+  color: #4aa34a;
+  text-decoration: none;
+}
+
+body footer p a:hover {
+  color: darkgreen;
+}
+
+/*# sourceMappingURL=styles.scss.map */
+/*# sourceMappingURL=styles.scss.map */
+/*# sourceMappingURL=styles.scss.map */
+/*# sourceMappingURL=styles.scss.map */
+/*# sourceMappingURL=styles.scss.map */
+/*# sourceMappingURL=styles.scss.map */
+/*# sourceMappingURL=styles.scss.map */
+/*# sourceMappingURL=styles.scss.map */
+/*# sourceMappingURL=styles.scss.map */
+/*# sourceMappingURL=styles.scss.map */
+/*# sourceMappingURL=styles.scss.map */
+/*# sourceMappingURL=styles.scss.map */
+/*# sourceMappingURL=styles.scss.map */
+/*# sourceMappingURL=styles.scss.map */
+/*# sourceMappingURL=styles.scss.map */
+/*# sourceMappingURL=styles.scss.map */
+/*# sourceMappingURL=styles.scss.map */
+/*# sourceMappingURL=styles.scss.map */
+/*# sourceMappingURL=styles.scss.map */
+/*# sourceMappingURL=styles.scss.map */
+/*# sourceMappingURL=styles.scss.map */
+/*# sourceMappingURL=styles.scss.map */
+/*# sourceMappingURL=styles.scss.map */
+/*# sourceMappingURL=styles.scss.map */
+/*# sourceMappingURL=styles.scss.map */
+/*# sourceMappingURL=styles.scss.map */
+/*# sourceMappingURL=styles.scss.map */
+/*# sourceMappingURL=styles.scss.map */
+/*# sourceMappingURL=styles.scss.map */
+/*# sourceMappingURL=styles.scss.map */
+/*# sourceMappingURL=styles.scss.map */
+/*# sourceMappingURL=styles.scss.map */
+/*# sourceMappingURL=styles.scss.map */
+/*# sourceMappingURL=styles.scss.map */
+/*# sourceMappingURL=styles.scss.map */
+/*# sourceMappingURL=styles.scss.map */
+/*# sourceMappingURL=styles.scss.map */
+/*# sourceMappingURL=styles.scss.map */
+/*# sourceMappingURL=styles.scss.map */
+/*# sourceMappingURL=styles.scss.map */
+/*# sourceMappingURL=styles.scss.map */
+/*# sourceMappingURL=styles.scss.map */
+/*# sourceMappingURL=styles.scss.map */
+/*# sourceMappingURL=styles.scss.map */
+/*# sourceMappingURL=styles.scss.map */
+/*# sourceMappingURL=styles.scss.map */
+/*# sourceMappingURL=styles.scss.map */
+/*# sourceMappingURL=styles.scss.map */
+/*# sourceMappingURL=styles.scss.map */
+/*# sourceMappingURL=styles.scss.map */
+/*# sourceMappingURL=styles.scss.map */
+/*# sourceMappingURL=styles.scss.map */
+/*# sourceMappingURL=styles.scss.map */
+/*# sourceMappingURL=styles.scss.map */
+/*# sourceMappingURL=styles.scss.map */
+/*# sourceMappingURL=styles.scss.map */
+/*# sourceMappingURL=styles.scss.map */
+/*# sourceMappingURL=styles.scss.map */
+/*# sourceMappingURL=styles.scss.map */
+/*# sourceMappingURL=styles.scss.map */
+/*# sourceMappingURL=styles.scss.map */
+/*# sourceMappingURL=styles.scss.map */
+/*# sourceMappingURL=styles.scss.map */
+/*# sourceMappingURL=styles.scss.map */
+
+/*# sourceMappingURL=styles.scss.map */
